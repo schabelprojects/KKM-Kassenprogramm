@@ -1,0 +1,10 @@
+
+.toolbar_home{
+    background-color: rgb(240, 229, 4);
+}
+
+.app-title{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}

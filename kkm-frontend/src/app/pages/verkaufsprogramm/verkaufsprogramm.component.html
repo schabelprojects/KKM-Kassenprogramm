@@ -1,1 +1,10 @@
-<p>verkaufsprogramm works!</p>
+<mat-toolbar class="toolbar_home">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="navigateTo('/home')">Startseite</button>
+        <button mat-menu-item (click)="navigateTo('/seller')">Verkäufer Datenbank</button>
+        <button mat-menu-item (click)="navigateTo('/sale')">Verkauf</button>
+        <button mat-menu-item (click)="navigateTo('/accounting')">Buchführung</button>
+      </mat-menu>
+    <span class="app-title">KKM-Kassen System</span>
+  </mat-toolbar>
